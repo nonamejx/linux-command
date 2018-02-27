@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xl-9">
+      <input class="form-control" id="search-box" type="text" placeholder="Seach" #searchBox (keyup)="search(searchBox.value)" />
+      <div class="command-list">
+        <div class="card" *ngFor="let command of filteredCommands">
+          <div class="card-header">
+            <span>{{command.cmd}}</span>
+            <button class="btn btn-outline-info btn-sm float-right">Copy</button>
+          </div>
+          <div class="card-body">
+              <span class="card-text">{{command.description}}</span>
+          </div>
+          <div class="card-footer">
+              <span *ngFor="let tag of command.tags" [ngClass]="randomBadgeCss()" class="float-left">{{tag}}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
