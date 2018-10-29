@@ -1,6 +1,6 @@
 # LinuxCommand
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.1.
+https://nonamejx.github.io/linux-command/
 
 ## Development server
 
